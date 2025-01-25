@@ -1,0 +1,11 @@
+[package]
+name = "gemgraph-wal"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+thiserror = { workspace = true }
+crc32c = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

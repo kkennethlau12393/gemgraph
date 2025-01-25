@@ -1,0 +1,14 @@
+[package]
+name = "gemgraph-mvcc"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+gemgraph-pager = { path = "../gemgraph-pager" }
+gemgraph-btree = { path = "../gemgraph-btree" }
+gemgraph-wal = { path = "../gemgraph-wal" }
+thiserror = { workspace = true }
+parking_lot = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

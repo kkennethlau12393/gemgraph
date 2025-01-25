@@ -1,0 +1,11 @@
+[package]
+name = "gemgraph-cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "gemgraph"
+path = "src/main.rs"
+
+[dependencies]
+gemgraph = { path = "../gemgraph" }

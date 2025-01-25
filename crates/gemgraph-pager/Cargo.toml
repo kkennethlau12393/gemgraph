@@ -1,0 +1,13 @@
+[package]
+name = "gemgraph-pager"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+thiserror = { workspace = true }
+memmap2 = { workspace = true }
+parking_lot = { workspace = true }
+crc32c = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

@@ -1,0 +1,13 @@
+[package]
+name = "gemgraph-btree"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+gemgraph-pager = { path = "../gemgraph-pager" }
+gemgraph-wal = { path = "../gemgraph-wal" }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }
+proptest = { workspace = true }

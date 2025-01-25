@@ -1,0 +1,13 @@
+[package]
+name = "gemgraph-bench"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "gemgraph-bench"
+path = "src/main.rs"
+
+[dependencies]
+gemgraph = { path = "../gemgraph" }
+rusqlite = { version = "0.39", features = ["bundled"] }
+tempfile = { workspace = true }

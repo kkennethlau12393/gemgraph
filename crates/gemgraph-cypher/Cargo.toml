@@ -1,0 +1,12 @@
+[package]
+name = "gemgraph-cypher"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+gemgraph-graph = { path = "../gemgraph-graph" }
+gemgraph-mvcc = { path = "../gemgraph-mvcc" }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

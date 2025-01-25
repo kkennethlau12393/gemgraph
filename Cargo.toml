@@ -1,0 +1,28 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/gemgraph-pager",
+    "crates/gemgraph-wal",
+    "crates/gemgraph-btree",
+    "crates/gemgraph-mvcc",
+    "crates/gemgraph-graph",
+    "crates/gemgraph-cypher",
+    "crates/gemgraph",
+    "crates/gemgraph-cli",
+    "crates/gemgraph-bench",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[workspace.dependencies]
+thiserror = "2"
+parking_lot = "0.12"
+memmap2 = "0.9"
+crc32c = "0.6"
+bincode = "1"
+serde = { version = "1", features = ["derive"] }
+tempfile = "3"
+proptest = "1"

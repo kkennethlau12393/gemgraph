@@ -1,0 +1,15 @@
+[package]
+name = "gemgraph"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+gemgraph-pager = { path = "../gemgraph-pager" }
+gemgraph-wal = { path = "../gemgraph-wal" }
+gemgraph-btree = { path = "../gemgraph-btree" }
+gemgraph-mvcc = { path = "../gemgraph-mvcc" }
+gemgraph-graph = { path = "../gemgraph-graph" }
+gemgraph-cypher = { path = "../gemgraph-cypher" }
+
+[dev-dependencies]
+tempfile = { workspace = true }
